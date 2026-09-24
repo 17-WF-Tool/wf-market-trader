@@ -11,17 +11,6 @@ on:
       - 'docs/**'
       - '.vscode/**'
 
-  push:
-    branches:
-      - 'feat/**'
-      - 'fix/**'
-      - 'issue/**'
-      - 'dev*'
-    paths-ignore:
-      - 'README.md'
-      - 'docs/**'
-      - '.vscode/**'
-
 permissions:
   contents: read
   security-events: write
