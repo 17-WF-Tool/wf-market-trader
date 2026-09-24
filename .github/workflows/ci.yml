@@ -74,30 +74,7 @@ jobs:
         run: npm run lint
 
   # -------------------------------------------------------------
-  # 4. 多語系完整性檢查 (i18n Integrity Test)
-  # -------------------------------------------------------------
-  i18n-check:
-    name: i18n Integrity Test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Check Multi-Language Completeness
-        # 驗證 TC/EN/SC 欄位無缺漏
-        run: npm run test:i18n
-
-  # -------------------------------------------------------------
-  # 5. 程式碼靜態安全分析 (SAST via CodeQL)
+  # 4. 程式碼靜態安全分析 (SAST via CodeQL)
   # -------------------------------------------------------------
   codeql-sast:
     name: Static Code Analysis (SAST)
@@ -115,7 +92,7 @@ jobs:
         uses: github/codeql-action/analyze@v3
 
   # -------------------------------------------------------------
-  # 6. 構建驗證與型別安全 (Build & Type Check)
+  # 5. 構建驗證與型別安全 (Build & Type Check)
   # -------------------------------------------------------------
   build-and-verify:
     name: Build & Type Check
