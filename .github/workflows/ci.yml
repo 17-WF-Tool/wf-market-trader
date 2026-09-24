@@ -97,7 +97,7 @@ jobs:
   build-and-verify:
     name: Build & Type Check
     runs-on: ubuntu-latest
-    needs: [code-style, i18n-check, dependency-audit]
+    needs: [code-style, dependency-audit]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
