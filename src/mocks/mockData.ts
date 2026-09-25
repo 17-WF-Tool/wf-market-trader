@@ -1,4 +1,4 @@
-import type { GroupedInventory } from '../types/inventory'
+import type { GroupedInventory } from '@/types/inventory'
 
 export const MOCK_INVENTORY: GroupedInventory = {
   "Baro 商人": [
@@ -12,7 +12,6 @@ export const MOCK_INVENTORY: GroupedInventory = {
       selected: false,
       quantity: 1,
       mod_rank: 0,
-      image_url: "https://cdn.warframestat.us/img/primed-continuity.png"
     },
     {
       url_name: "primed_target_cracker",
@@ -24,7 +23,6 @@ export const MOCK_INVENTORY: GroupedInventory = {
       selected: false,
       quantity: 1,
       mod_rank: 0,
-      image_url: "https://cdn.warframestat.us/img/primed-target-cracker.png"
     }
   ],
   "鋼鐵之路 (Teshin)": [
@@ -38,7 +36,6 @@ export const MOCK_INVENTORY: GroupedInventory = {
       selected: false,
       quantity: 1,
       mod_rank: 5,
-      image_url: "https://cdn.warframestat.us/img/primary-merciless.png"
     }
   ]
 }

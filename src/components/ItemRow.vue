@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type { Item } from '../types/inventory'
+import type { Item } from '@/types/inventory'
+import { getWfcdIconUrl } from '@/utils/wfcdImage';
 
 defineProps<{
   item: Item
@@ -30,7 +31,7 @@ defineProps<{
 
     <!-- 左側物品圖片 -->
     <div class="w-12 h-12 rounded-lg bg-slate-900 flex items-center justify-center p-1 shrink-0 border border-slate-800">
-      <img v-if="item.image_url" :src="item.image_url" :alt="item.name_tc" class="w-full h-full object-contain" />
+      <img v-if="item.name_en" :src="getWfcdIconUrl(item.name_en)" :alt="item.name_tc" class="w-full h-full object-contain" />
       <span v-else class="text-[10px] text-slate-600">無圖</span>
     </div>
 

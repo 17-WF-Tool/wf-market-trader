@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { Item } from '../types/inventory'
+import type { Item } from '@/types/inventory'
 import ItemRow from './ItemRow.vue'
 
 const props = defineProps<{

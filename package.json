@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "generate:icons": "node scripts/generate-item-icons.mjs",
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
@@ -17,6 +18,7 @@
     "@types/node": "^24.13.3",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vue/tsconfig": "^0.9.1",
+    "@wfcd/items": "^1.1276.3",
     "autoprefixer": "^10.6.1",
     "oxlint": "^1.85.0",
     "postcss": "^8.5.28",

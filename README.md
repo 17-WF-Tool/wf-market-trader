@@ -36,3 +36,18 @@
 * **語言**：[TypeScript](https://www.typescriptlang.org/)
 * **資料庫**：[Warframe Community Developers (WFCD)](https://github.com/WFCD/warframe-items)
     > 開放資料來源。
+
+
+## 注意事項
+
+### WFCD 資料更新
+
+[圖片資料](./src/assets/data/)隨專案移動，若內容過期請參考下方指令更新內容：
+
+```bash
+   npm update @wfcd/items
+```
+與
+```bash
+   npm run generate:icons
+```
